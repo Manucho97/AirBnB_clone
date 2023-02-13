@@ -124,6 +124,7 @@ class TestHBNBCommand_create(unittest.TestCase):
         except IOError:
             pass
 
+
     def test_create_missing_class(self):
         correct = "** class name missing **"
         with patch("sys.stdout", new=StringIO()) as output:
@@ -870,6 +871,7 @@ class TestHBNBCommand_all(unittest.TestCase):
 class TestHBNBCommand_update(unittest.TestCase):
     """Unittests for testing update from the HBNB command interpreter."""
 
+
     @classmethod
     def setUp(self):
         try:
@@ -877,6 +879,7 @@ class TestHBNBCommand_update(unittest.TestCase):
         except IOError:
             pass
         FileStorage.__objects = {}
+
 
     @classmethod
     def tearDown(self):
@@ -1541,6 +1544,7 @@ class TestHBNBCommand_update(unittest.TestCase):
 class TestHBNBCommand_count(unittest.TestCase):
     """Unittests for testing count method of HBNB comand interpreter."""
 
+
     @classmethod
     def setUp(self):
         try:
@@ -1548,6 +1552,7 @@ class TestHBNBCommand_count(unittest.TestCase):
         except IOError:
             pass
         FileStorage._FileStorage__objects = {}
+
 
     @classmethod
     def tearDown(self):
